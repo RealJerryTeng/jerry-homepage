@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jerry Teng - 个人主页</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --accent: #0077ff;
+      --light: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 1em 2em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.5em;
+      color: var(--accent);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+    }
+
+    .intro p {
+      color: #555;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0;
+      justify-content: center;
+    }
+
+    .tag {
+      background: var(--light);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .contact a {
+      margin: 0 10px;
+      color: var(--text);
+      font-size: 1.5em;
+    }
+
+    .contact a:hover {
+      color: var(--accent);
+    }
+
+    .articles {
+      margin-top: 50px;
+    }
+
+    .articles h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 5px;
+    }
+
+    .article-item {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .article-item h4 {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+
+    .article-item p {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        display: none;
+      }
+      nav h1 {
+        font-size: 1.2em;
+      }
+      .intro h2 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Jerry Teng</h1>
+      <ul>
+        <li><a href="#about">简介</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#articles">文章</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" id="about">
+      <h2>勾画属于自己的生活蓝图</h2>
+      <p>并在这里分享一些深得我心的文章 / 观点。</p>
+    </section>
+
+    <section class="tags" id="projects">
+      <span class="tag">📘 教育</span>
+      <span class="tag">💹 交易</span>
+      <span class="tag">🧠 哲学</span>
+      <span class="tag">📚 人文</span>
+      <span class="tag">🌍 社会</span>
+    </section>
+
+    <section class="articles" id="articles">
+      <h3>分享文章</h3>
+
+      <div class="article-item">
+        <h4>如何理解真正的学习力</h4>
+        <p>从输入到输出，从模仿到创新，这是我对知识掌握与成长路径的深入思考。</p>
+      </div>
+
+      <div class="article-item">
+        <h4>交易的本质是概率和人性</h4>
+        <p>技术只是外壳，真正决定盈亏的是你对市场情绪的理解和自我纪律的掌握。</p>
+      </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h3>联系我</h3>
+      <a href="https://instagram.com/你的用户名" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.xiaohongshu.com/user/你的ID" target="_blank"><i class="fas fa-heart"></i></a>
+      <a href="#" onclick="alert('微信号：your_wechat_id')"><i class="fab fa-weixin"></i></a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Jerry Teng. 保留所有权利.
+  </footer>
+
+</body>
+</html>
